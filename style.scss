@@ -7,14 +7,13 @@
 $Gray: #e5e5e5;
 $Accent: #66c05d;
 $Dark: #333333;
-$fontsz: 0.87vw;
 
 %tpl-callback {
   @include flex(row, center, center);
   background: none;
   height: 100%;
   width: 50%;
-  font-size: $fontsz * 0.875;
+  font-size: 1em * 0.875;
   border: 2px solid $Accent;
   border-radius: 10vw;
   cursor: pointer;
@@ -25,7 +24,7 @@ $fontsz: 0.87vw;
   color: #fff;
   cursor: pointer;
   height: 17%;
-  font-size: $fontsz * 0.875;
+  font-size: 1em * 0.875;
   border: 2px solid #ffffff;
   border-radius: 10vw;
 }
@@ -36,11 +35,12 @@ body {
   min-height: 100vh;
   margin: 0 0 0 0;
   font-family: "Roboto", sans-serif;
-  font-size: $fontsz;
+  font-size: 0.87vw;
   .content {
     width: 60%;
     @media screen and (max-aspect-ratio: 2/3) {
       width: 85%;
+      font-size: 1.7vw;
     }
   }
   header {
@@ -48,12 +48,15 @@ body {
     height: 12.5%;
     .top-line {
       @include flex(row, center, center);
-      font-size: $fontsz * 0.875;
+      font-size: 1em * 0.875;
       height: 25%;
       background-color: $Gray;
+      div {
+        @include flex(row, center, center);
+      }
       &__nav {
         @include flex(row, space-between, center);
-        width: 25%;
+        width: 50%;
       }
       &__menu-content {
         cursor: pointer;
@@ -78,7 +81,7 @@ body {
             height: 60%;
             span {
               font-weight: bolder;
-              font-size: $fontsz * 2.25;
+              font-size: 1em * 2.25;
               color: $Accent;
             }
             img {
@@ -97,9 +100,12 @@ body {
           }
         }
       }
+      .div-content {
+        @include flex(row, center, center);
+      }
       &__menu {
         @include flex(row, space-between, center);
-        width: 35%;
+        width: 65%;
         height: 33%;
       }
       &__menu-content {
@@ -119,10 +125,10 @@ body {
       color: #fff;
 
       &_super-chair {
-        font-size: $fontsz * 3;
+        font-size: 1em * 3;
       }
       &_stock-text {
-        font-size: $fontsz * 0.875;
+        font-size: 1em * 0.875;
       }
       &_more {
         @extend %tpl-btn;
@@ -142,7 +148,7 @@ body {
         @include flex(row, space-between, center);
         height: 15%;
         span {
-          font-size: $fontsz * 1.5;
+          font-size: 1em * 1.5;
         }
         .car {
           width: 23%;
@@ -171,10 +177,10 @@ body {
             }
             &_description {
               width: 70%;
-              font-size: $fontsz * 0.875;
+              font-size: 1em * 0.875;
             }
             &_price {
-              font-size: $fontsz * 1.375;
+              font-size: 1em * 1.375;
               font-weight: bold;
             }
             &_buy {
@@ -182,7 +188,7 @@ body {
               width: 50%;
               height: 10%;
               color: #fff;
-              font-size: $fontsz * 0.875;
+              font-size: 1em * 0.875;
               background-color: $Accent;
               border-radius: 10vw;
               border: none;
@@ -201,6 +207,9 @@ body {
         @include flex(row, space-between, center);
         width: 100%;
         height: 30%;
+        @media screen and (max-aspect-ratio: 2/3) {
+          height: 40%;
+        }
         &__subscribe,
         &__map {
           @include flex(row, space-evenly, center);
@@ -209,10 +218,10 @@ body {
             width: 55%;
             height: 100%;
             h1 {
-              font-size: $fontsz * 1.25;
+              font-size: 1em * 1.25;
             }
             P {
-              font-size: $fontsz * 0.875;
+              font-size: 1em * 0.875;
             }
             input {
               width: 75%;
@@ -220,11 +229,11 @@ body {
               border: none;
               border-radius: 10vw;
               padding-left: 10%;
-              font-size: $fontsz;
+              font-size: 1em;
             }
             input::placeholder {
               color: #c4c4c4;
-              font-size: $fontsz * 0.875;
+              font-size: 1em * 0.875;
             }
           }
           img {
@@ -267,7 +276,7 @@ body {
           }
         }
         &_address {
-          font-size: $fontsz * 0.875;
+          font-size: 1em * 0.875;
         }
         .call {
           @include flex(row, space-between, center);
@@ -288,7 +297,7 @@ body {
       &__content {
         @include flex(row, space-between, center);
         span {
-          font-size: $fontsz * 0.75;
+          font-size: 1em * 0.75;
         }
       }
     }

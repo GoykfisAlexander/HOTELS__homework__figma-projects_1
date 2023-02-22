@@ -6,7 +6,7 @@ body footer .footer-top__content .call__back, body header .second-line__top .cal
   background: none;
   height: 100%;
   width: 50%;
-  font-size: 0.76125vw;
+  font-size: 0.875em;
   border: 2px solid #66c05d;
   border-radius: 10vw;
   cursor: pointer;
@@ -21,7 +21,7 @@ body .bgc__content .rectangles__subscribe button, body .bgc__content .rectangles
   color: #fff;
   cursor: pointer;
   height: 17%;
-  font-size: 0.76125vw;
+  font-size: 0.875em;
   border: 2px solid #ffffff;
   border-radius: 10vw;
 }
@@ -40,6 +40,7 @@ body .content {
 @media screen and (max-aspect-ratio: 2/3) {
   body .content {
     width: 85%;
+    font-size: 1.7vw;
   }
 }
 body header {
@@ -51,16 +52,22 @@ body header .top-line {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 0.76125vw;
+  font-size: 0.875em;
   height: 25%;
   background-color: #e5e5e5;
+}
+body header .top-line div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 body header .top-line__nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 25%;
+  width: 50%;
 }
 body header .top-line__menu-content {
   cursor: pointer;
@@ -99,7 +106,7 @@ body header .second-line__top-content .logo {
 }
 body header .second-line__top-content .logo span {
   font-weight: bolder;
-  font-size: 1.9575vw;
+  font-size: 2.25em;
   color: #66c05d;
 }
 body header .second-line__top-content .logo img {
@@ -116,12 +123,18 @@ body header .second-line__top .call {
   height: 37%;
   width: 33%;
 }
+body header .second-line .div-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 body header .second-line__menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 35%;
+  width: 65%;
   height: 33%;
 }
 body header .second-line__menu-content {
@@ -145,10 +158,10 @@ body .sale__content {
   color: #fff;
 }
 body .sale__content_super-chair {
-  font-size: 2.61vw;
+  font-size: 3em;
 }
 body .sale__content_stock-text {
-  font-size: 0.76125vw;
+  font-size: 0.875em;
 }
 body .sale__content_more {
   width: 15%;
@@ -174,7 +187,7 @@ body .bgc__content__header {
   height: 15%;
 }
 body .bgc__content__header span {
-  font-size: 1.305vw;
+  font-size: 1.5em;
 }
 body .bgc__content__header .car {
   width: 23%;
@@ -215,10 +228,10 @@ body .bgc__content__body .goods__product_image {
 }
 body .bgc__content__body .goods__product_description {
   width: 70%;
-  font-size: 0.76125vw;
+  font-size: 0.875em;
 }
 body .bgc__content__body .goods__product_price {
-  font-size: 1.19625vw;
+  font-size: 1.375em;
   font-weight: bold;
 }
 body .bgc__content__body .goods__product_buy {
@@ -229,7 +242,7 @@ body .bgc__content__body .goods__product_buy {
   width: 50%;
   height: 10%;
   color: #fff;
-  font-size: 0.76125vw;
+  font-size: 0.875em;
   background-color: #66c05d;
   border-radius: 10vw;
   border: none;
@@ -249,6 +262,11 @@ body .bgc__content .rectangles .rectangle {
   background-color: #66c05d;
   color: #fff;
 }
+@media screen and (max-aspect-ratio: 2/3) {
+  body .bgc__content .rectangles {
+    height: 40%;
+  }
+}
 body .bgc__content .rectangles__subscribe, body .bgc__content .rectangles__map {
   display: flex;
   flex-direction: row;
@@ -264,10 +282,10 @@ body .bgc__content .rectangles__subscribe__content, body .bgc__content .rectangl
   height: 100%;
 }
 body .bgc__content .rectangles__subscribe__content h1, body .bgc__content .rectangles__map__content h1 {
-  font-size: 1.0875vw;
+  font-size: 1.25em;
 }
 body .bgc__content .rectangles__subscribe__content P, body .bgc__content .rectangles__map__content P {
-  font-size: 0.76125vw;
+  font-size: 0.875em;
 }
 body .bgc__content .rectangles__subscribe__content input, body .bgc__content .rectangles__map__content input {
   width: 75%;
@@ -275,15 +293,15 @@ body .bgc__content .rectangles__subscribe__content input, body .bgc__content .re
   border: none;
   border-radius: 10vw;
   padding-left: 10%;
-  font-size: 0.87vw;
+  font-size: 1em;
 }
 body .bgc__content .rectangles__subscribe__content input::-moz-placeholder, body .bgc__content .rectangles__map__content input::-moz-placeholder {
   color: #c4c4c4;
-  font-size: 0.76125vw;
+  font-size: 0.875em;
 }
 body .bgc__content .rectangles__subscribe__content input::placeholder, body .bgc__content .rectangles__map__content input::placeholder {
   color: #c4c4c4;
-  font-size: 0.76125vw;
+  font-size: 0.875em;
 }
 body .bgc__content .rectangles__subscribe img, body .bgc__content .rectangles__map img {
   width: 30%;
@@ -331,7 +349,7 @@ body footer .footer-top__content_links .link {
   border-radius: 100%;
 }
 body footer .footer-top__content_address {
-  font-size: 0.76125vw;
+  font-size: 0.875em;
 }
 body footer .footer-top__content .call {
   display: flex;
@@ -357,5 +375,5 @@ body footer .footer-bottom__content {
   align-items: center;
 }
 body footer .footer-bottom__content span {
-  font-size: 0.6525vw;
+  font-size: 0.75em;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,361 @@
+body footer .footer-top__content .call__back, body header .second-line__top .call__back {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  height: 100%;
+  width: 50%;
+  font-size: 0.76125vw;
+  border: 2px solid #66c05d;
+  border-radius: 10vw;
+  cursor: pointer;
+}
+
+body .bgc__content .rectangles__subscribe button, body .bgc__content .rectangles__map button, body .sale__content_more {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  height: 17%;
+  font-size: 0.76125vw;
+  border: 2px solid #ffffff;
+  border-radius: 10vw;
+}
+
+body {
+  width: 100vw;
+  height: 100vw;
+  min-height: 100vh;
+  margin: 0 0 0 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.87vw;
+}
+body .content {
+  width: 60%;
+}
+@media screen and (max-aspect-ratio: 2/3) {
+  body .content {
+    width: 85%;
+  }
+}
+body header {
+  width: 100%;
+  height: 12.5%;
+}
+body header .top-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.76125vw;
+  height: 25%;
+  background-color: #e5e5e5;
+}
+body header .top-line__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+body header .top-line__menu-content {
+  cursor: pointer;
+}
+body header .second-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75%;
+}
+body header .second-line__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 66%;
+  border: 1px solid #e5e5e5;
+}
+body header .second-line__top-content {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .second-line__top-content .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  height: 60%;
+}
+body header .second-line__top-content .logo span {
+  font-weight: bolder;
+  font-size: 1.9575vw;
+  color: #66c05d;
+}
+body header .second-line__top-content .logo img {
+  width: 30%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body header .second-line__top .call {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 37%;
+  width: 33%;
+}
+body header .second-line__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  height: 33%;
+}
+body header .second-line__menu-content {
+  cursor: pointer;
+}
+body .sale {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  background: url("./images/sale.svg") center/cover no-repeat;
+}
+body .sale__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  height: 40%;
+  color: #fff;
+}
+body .sale__content_super-chair {
+  font-size: 2.61vw;
+}
+body .sale__content_stock-text {
+  font-size: 0.76125vw;
+}
+body .sale__content_more {
+  width: 15%;
+}
+body .bgc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 47.5%;
+  background-color: #e5e5e5;
+}
+body .bgc__content {
+  margin-top: -5%;
+  height: 80%;
+}
+body .bgc__content__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 15%;
+}
+body .bgc__content__header span {
+  font-size: 1.305vw;
+}
+body .bgc__content__header .car {
+  width: 23%;
+  height: 70%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+body .bgc__content__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 85%;
+}
+body .bgc__content__body .goods {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 55%;
+}
+body .bgc__content__body .goods__product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 23%;
+  background-color: #fff;
+}
+body .bgc__content__body .goods__product_image {
+  width: 50%;
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body .bgc__content__body .goods__product_description {
+  width: 70%;
+  font-size: 0.76125vw;
+}
+body .bgc__content__body .goods__product_price {
+  font-size: 1.19625vw;
+  font-weight: bold;
+}
+body .bgc__content__body .goods__product_buy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 10%;
+  color: #fff;
+  font-size: 0.76125vw;
+  background-color: #66c05d;
+  border-radius: 10vw;
+  border: none;
+  cursor: pointer;
+}
+body .bgc__content .rectangles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+}
+body .bgc__content .rectangles .rectangle {
+  height: 100%;
+  width: 48.5%;
+  background-color: #66c05d;
+  color: #fff;
+}
+body .bgc__content .rectangles__subscribe, body .bgc__content .rectangles__map {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .bgc__content .rectangles__subscribe__content, body .bgc__content .rectangles__map__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 55%;
+  height: 100%;
+}
+body .bgc__content .rectangles__subscribe__content h1, body .bgc__content .rectangles__map__content h1 {
+  font-size: 1.0875vw;
+}
+body .bgc__content .rectangles__subscribe__content P, body .bgc__content .rectangles__map__content P {
+  font-size: 0.76125vw;
+}
+body .bgc__content .rectangles__subscribe__content input, body .bgc__content .rectangles__map__content input {
+  width: 75%;
+  height: 20%;
+  border: none;
+  border-radius: 10vw;
+  padding-left: 10%;
+  font-size: 0.87vw;
+}
+body .bgc__content .rectangles__subscribe__content input::-moz-placeholder, body .bgc__content .rectangles__map__content input::-moz-placeholder {
+  color: #c4c4c4;
+  font-size: 0.76125vw;
+}
+body .bgc__content .rectangles__subscribe__content input::placeholder, body .bgc__content .rectangles__map__content input::placeholder {
+  color: #c4c4c4;
+  font-size: 0.76125vw;
+}
+body .bgc__content .rectangles__subscribe img, body .bgc__content .rectangles__map img {
+  width: 30%;
+  height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+body .bgc__content .rectangles__subscribe button, body .bgc__content .rectangles__map button {
+  width: 35%;
+  height: 20%;
+}
+body .bgc__content .rectangles__map__content {
+  width: 90%;
+}
+body footer {
+  width: 100%;
+  height: 10%;
+}
+body footer .footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 65%;
+}
+body footer .footer-top__content {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer .footer-top__content_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: 60%;
+}
+body footer .footer-top__content_links .link {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100%;
+}
+body footer .footer-top__content_address {
+  font-size: 0.76125vw;
+}
+body footer .footer-top__content .call {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 37%;
+  width: 33%;
+}
+body footer .footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 35%;
+  background-color: #e5e5e5;
+}
+body footer .footer-bottom__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer .footer-bottom__content span {
+  font-size: 0.6525vw;
+}/*# sourceMappingURL=style.css.map */

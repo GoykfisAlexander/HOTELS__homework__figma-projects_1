@@ -1,0 +1,296 @@
+@mixin flex($row, $content-center, $items-center) {
+  display: flex;
+  flex-direction: $row;
+  justify-content: $content-center;
+  align-items: $items-center;
+}
+$Gray: #e5e5e5;
+$Accent: #66c05d;
+$Dark: #333333;
+$fontsz: 0.87vw;
+
+%tpl-callback {
+  @include flex(row, center, center);
+  background: none;
+  height: 100%;
+  width: 50%;
+  font-size: $fontsz * 0.875;
+  border: 2px solid $Accent;
+  border-radius: 10vw;
+  cursor: pointer;
+}
+%tpl-btn {
+  @include flex(row, center, center);
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  height: 17%;
+  font-size: $fontsz * 0.875;
+  border: 2px solid #ffffff;
+  border-radius: 10vw;
+}
+
+body {
+  width: 100vw;
+  height: 100vw;
+  min-height: 100vh;
+  margin: 0 0 0 0;
+  font-family: "Roboto", sans-serif;
+  font-size: $fontsz;
+  .content {
+    width: 60%;
+    @media screen and (max-aspect-ratio: 2/3) {
+      width: 85%;
+    }
+  }
+  header {
+    width: 100%;
+    height: 12.5%;
+    .top-line {
+      @include flex(row, center, center);
+      font-size: $fontsz * 0.875;
+      height: 25%;
+      background-color: $Gray;
+      &__nav {
+        @include flex(row, space-between, center);
+        width: 25%;
+      }
+      &__menu-content {
+        cursor: pointer;
+      }
+    }
+    .second-line {
+      @include flex(column, center, center);
+      width: 100%;
+      height: 75%;
+      &__top {
+        @include flex(row, center, center);
+
+        width: 100%;
+        height: 66%;
+        border: 1px solid $Gray;
+        &-content {
+          height: 100%;
+          @include flex(row, space-between, center);
+          .logo {
+            @include flex(row, space-between, center);
+            width: 20%;
+            height: 60%;
+            span {
+              font-weight: bolder;
+              font-size: $fontsz * 2.25;
+              color: $Accent;
+            }
+            img {
+              width: 30%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+        }
+        .call {
+          @include flex(row, space-between, center);
+          height: 37%;
+          width: 33%;
+          &__back {
+            @extend %tpl-callback;
+          }
+        }
+      }
+      &__menu {
+        @include flex(row, space-between, center);
+        width: 35%;
+        height: 33%;
+      }
+      &__menu-content {
+        cursor: pointer;
+      }
+    }
+  }
+  .sale {
+    @include flex(row, center, center);
+
+    width: 100%;
+    height: 30%;
+    background: url("./images/sale.svg") center/cover no-repeat;
+    &__content {
+      @include flex(column, space-between, start);
+      height: 40%;
+      color: #fff;
+
+      &_super-chair {
+        font-size: $fontsz * 3;
+      }
+      &_stock-text {
+        font-size: $fontsz * 0.875;
+      }
+      &_more {
+        @extend %tpl-btn;
+        width: 15%;
+      }
+    }
+  }
+  .bgc {
+    @include flex(row, center, center);
+    width: 100%;
+    height: 47.5%;
+    background-color: $Gray;
+    &__content {
+      margin-top: -5%;
+      height: 80%;
+      &__header {
+        @include flex(row, space-between, center);
+        height: 15%;
+        span {
+          font-size: $fontsz * 1.5;
+        }
+        .car {
+          width: 23%;
+          height: 70%;
+          object-fit: scale-down;
+        }
+      }
+      &__body {
+        @include flex(column, space-between, center);
+
+        width: 100%;
+        height: 85%;
+        .goods {
+          @include flex(row, space-between, center);
+          width: 100%;
+          height: 55%;
+          &__product {
+            @include flex(column, space-around, center);
+            height: 100%;
+            width: 23%;
+            background-color: #fff;
+            &_image {
+              width: 50%;
+              height: 50%;
+              object-fit: contain;
+            }
+            &_description {
+              width: 70%;
+              font-size: $fontsz * 0.875;
+            }
+            &_price {
+              font-size: $fontsz * 1.375;
+              font-weight: bold;
+            }
+            &_buy {
+              @include flex(row, space-around, center);
+              width: 50%;
+              height: 10%;
+              color: #fff;
+              font-size: $fontsz * 0.875;
+              background-color: $Accent;
+              border-radius: 10vw;
+              border: none;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .rectangles {
+        .rectangle {
+          height: 100%;
+          width: 48.5%;
+          background-color: $Accent;
+          color: #fff;
+        }
+        @include flex(row, space-between, center);
+        width: 100%;
+        height: 30%;
+        &__subscribe,
+        &__map {
+          @include flex(row, space-evenly, center);
+          &__content {
+            @include flex(column, center, start);
+            width: 55%;
+            height: 100%;
+            h1 {
+              font-size: $fontsz * 1.25;
+            }
+            P {
+              font-size: $fontsz * 0.875;
+            }
+            input {
+              width: 75%;
+              height: 20%;
+              border: none;
+              border-radius: 10vw;
+              padding-left: 10%;
+              font-size: $fontsz;
+            }
+            input::placeholder {
+              color: #c4c4c4;
+              font-size: $fontsz * 0.875;
+            }
+          }
+          img {
+            width: 30%;
+            height: 70%;
+            object-fit: contain;
+          }
+          button {
+            @extend %tpl-btn;
+            width: 35%;
+            height: 20%;
+          }
+        }
+        &__map__content {
+          width: 90%;
+        }
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    height: 10%;
+    .footer-top {
+      @include flex(row, center, center);
+
+      width: 100%;
+      height: 65%;
+      &__content {
+        height: 100%;
+        @include flex(row, space-between, center);
+        &_links {
+          @include flex(row, space-between, center);
+
+          width: 30%;
+          height: 60%;
+          .link {
+            width: 3vw;
+            height: 3vw;
+            border-radius: 100%;
+          }
+        }
+        &_address {
+          font-size: $fontsz * 0.875;
+        }
+        .call {
+          @include flex(row, space-between, center);
+          height: 37%;
+          width: 33%;
+          &__back {
+            @extend %tpl-callback;
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      @include flex(row, center, center);
+
+      width: 100%;
+      height: 35%;
+      background-color: $Gray;
+      &__content {
+        @include flex(row, space-between, center);
+        span {
+          font-size: $fontsz * 0.75;
+        }
+      }
+    }
+  }
+}

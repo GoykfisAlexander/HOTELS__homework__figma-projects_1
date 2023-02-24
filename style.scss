@@ -71,7 +71,7 @@ body {
 
         width: 100%;
         height: 66%;
-        border: 1px solid $Gray;
+        border-bottom: 1px solid $Gray;
         &-content {
           height: 100%;
           @include flex(row, space-between, center);

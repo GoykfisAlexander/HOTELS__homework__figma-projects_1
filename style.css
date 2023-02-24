@@ -87,7 +87,7 @@ body header .second-line__top {
   align-items: center;
   width: 100%;
   height: 66%;
-  border: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 body header .second-line__top-content {
   height: 100%;
